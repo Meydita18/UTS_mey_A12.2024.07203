@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - Toko Komputer Semarang</title>
+    <meta name="description" content="Jelajahi koleksi lengkap produk komputer kami di Semarang. Laptop, PC, monitor, dan aksesoris dengan harga terbaik.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-microchip loading-icon"></i>
+            </div>
+            <h2 class="loading-text">Toko Komputer MEY Semarang</h2>
+            <p class="loading-subtitle">Memuat produk terbaik untuk Anda...</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand brand-logo" href="index.html">
+                <i class="fas fa-microchip"></i>
+                <span>Toko Komputer MEY</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+                
+                <div class="navbar-actions">
+                    <div class="search-box me-3">
+                        <input type="text" class="form-control search-input" id="searchInput" placeholder="Cari produk...">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="user-actions">
+                        <a href="#" class="action-btn" title="Login">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <a href="#" class="action-btn cart-btn" title="Keranjang">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 120px 0 60px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="text-white mb-3" data-aos="fade-right">Semua Produk</h1>
+                    <p class="text-white-50 mb-0" data-aos="fade-right" data-aos-delay="100">
+                        Temukan produk komputer terbaik dengan harga terjangkau di Semarang
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb breadcrumb-custom justify-content-lg-end">
+                            <li class="breadcrumb-item-custom"><a href="index.html">Beranda</a></li>
+                            <li class="breadcrumb-item-custom active">Produk</li>
+                            <li class="breadcrumb-item-custom"><a href="index.html">FAQ</a></li>
+
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Filters -->
+                <div class="col-lg-3 col-md-4 mb-4" data-aos="fade-right">
+                    <div class="filter-sidebar sticky-top" style="top: 100px;">
+                        <!-- Category Filter -->
+                        <div class="card card-custom mb-4">
+                            <div class="card-header-custom">
+                                <h5 class="mb-0"><i class="fas fa-list me-2"></i>Kategori</h5>
+                            </div>
+                            <div class="card-body-custom">
+                                <div class="list-unstyled mb-0">
+                                    <div class="mb-2">
+                                        <a href="#" class="filter-link active" data-filter="category" data-category="all">
+                                            <i class="fas fa-th me-2"></i>Semua Produk
+                                        </a>
+                                    </div>
+                                    <div class="mb-2">
+                                        <a href="#" class="filter-link" data-filter="category" data-category="laptop">
+                                            <i class="fas fa-laptop me-2"></i>Laptop
+                                        </a>
+                                    </div>
+                                    <div class="mb-2">
+                                        <a href="#" class="filter-link" data-filter="category" data-category="pc">
+                                            <i class="fas fa-desktop me-2"></i>PC Desktop
+                                        </a>
+                                    </div>
+                                    <div class="mb-2">
+                                        <a href="#" class="filter-link" data-filter="category" data-category="monitor">
+                                            <i class="fas fa-tv me-2"></i>Monitor
+                                        </a>
+                                    </div>
+                                    <div class="mb-2">
+                                        <a href="#" class="filter-link" data-filter="category" data-category="keyboard">
+                                            <i class="fas fa-keyboard me-2"></i>Keyboard
+                                        </a>
+                                    </div>
+                                    <div class="mb-2">
+                                        <a href="#" class="filter-link" data-filter="category" data-category="mouse">
+                                            <i class="fas fa-mouse me-2"></i>Mouse
+                                        </a>
+                                    </div>
+                                    <div class="mb-2">
+                                        <a href="#" class="filter-link" data-filter="category" data-category="headset">
+                                            <i class="fas fa-headphones me-2"></i>Headset
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price Range Filter -->
+                        <div class="card card-custom mb-4">
+                            <div class="card-header-custom">
+                                <h5 class="mb-0"><i class="fas fa-tag me-2"></i>Harga</h5>
+                            </div>
+                            <div class="card-body-custom">
+                                <div class="mb-3">
+                                    <label for="priceRange" class="form-label-custom">Range Harga</label>
+                                    <input type="range" class="range-custom" id="priceRange" min="0" max="50000000" value="50000000" step="1000000">
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <small class="text-muted">Rp 0</small>
+                                        <small class="text-primary fw-bold" id="priceRangeValue">Rp 50.000.000</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Brand Filter -->
+                        <div class="card card-custom mb-4">
+                            <div class="card-header-custom">
+                                <h5 class="mb-0"><i class="fas fa-industry me-2"></i>Merek</h5>
+                            </div>
+                            <div class="card-body-custom">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="brand-asus" value="ASUS">
+                                    <label class="form-check-label" for="brand-asus">ASUS</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="brand-lenovo" value="Lenovo">
+                                    <label class="form-check-label" for="brand-lenovo">Lenovo</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="brand-msi" value="MSI">
+                                    <label class="form-check-label" for="brand-msi">MSI</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="brand-samsung" value="Samsung">
+                                    <label class="form-check-label" for="brand-samsung">Samsung</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="brand-razer" value="Razer">
+                                    <label class="form-check-label" for="brand-razer">Razer</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="brand-logitech" value="Logitech">
+                                    <label class="form-check-label" for="brand-logitech">Logitech</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clear Filters -->
+                        <button class="btn btn-outline-custom w-100" id="clearFilters">
+                            <i class="fas fa-times me-2"></i>Bersihkan Filter
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="col-lg-9 col-md-8">
+                    <!-- Products Header -->
+                    <div class="d-flex flex-wrap justify-content-between align-items-center mb-4" data-aos="fade-up">
+                        <div class="mb-3 mb-md-0">
+                            <h5 class="mb-1">Menampilkan <span id="productCount">8</span> Produk</h5>
+                            <p class="text-muted mb-0">Ditemukan berdasarkan filter Anda</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="dropdown-custom">
+                                <button class="dropdown-toggle-custom" data-bs-toggle="dropdown">
+                                    <i class="fas fa-sort me-2"></i>Urutkan
+                                </button>
+                                <ul class="dropdown-menu-custom">
+                                    <li><a class="dropdown-item" href="#" data-sort="name">Nama A-Z</a></li>
+                                    <li><a class="dropdown-item" href="#" data-sort="price-low">Harga Terendah</a></li>
+                                    <li><a class="dropdown-item" href="#" data-sort="price-high">Harga Tertinggi</a></li>
+                                    <li><a class="dropdown-item" href="#" data-sort="rating">Rating Tertinggi</a></li>
+                                    <li><a class="dropdown-item" href="#" data-sort="newest">Terbaru</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-secondary active" id="gridView">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-secondary" id="listView">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="product-grid" data-aos="fade-up" data-aos-delay="200">
+                        <!-- Products will be loaded here by JavaScript -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation" class="mt-5" data-aos="fade-up">
+                        <ul class="pagination-custom">
+                            <li class="page-item-custom disabled">
+                                <a class="page-link-custom" href="#" aria-label="Previous">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item-custom active">
+                                <a class="page-link-custom" href="#">1</a>
+                            </li>
+                            <li class="page-item-custom">
+                                <a class="page-link-custom" href="#">2</a>
+                            </li>
+                            <li class="page-item-custom">
+                                <a class="page-link-custom" href="#">3</a>
+                            </li>
+                            <li class="page-item-custom">
+                                <a class="page-link-custom" href="#" aria-label="Next">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mb-3" data-aos="fade-up">Dapatkan Penawaran Eksklusif</h2>
+                    <p class="text-white-50 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        Berlangganan newsletter kami untuk mendapatkan diskon spesial dan update produk terbaru
+                    </p>
+                    <form class="newsletter-form" data-aos="fade-up" data-aos-delay="200">
+                        <div class="input-group">
+                            <input type="email" class="form-control form-control-custom" placeholder="Masukkan email Anda..." required>
+                            <button class="btn btn-light" type="submit">
+                                <i class="fas fa-paper-plane me-2"></i>Berlangganan
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-brand">
+                        <a href="index.html" class="brand-logo text-white">
+                            <i class="fas fa-microchip"></i>
+                            <span>Toko Komputer</span>
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        Toko komputer terpercaya di Semarang dengan koleksi produk terlengkap dan harga terbaik.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Kategori</h5>
+                    <ul class="footer-links">
+                        <li><a href="products.html?category=laptop" class="footer-link">Laptop</a></li>
+                        <li><a href="products.html?category=pc" class="footer-link">PC Desktop</a></li>
+                        <li><a href="products.html?category=monitor" class="footer-link">Monitor</a></li>
+                        <li><a href="products.html?category=keyboard" class="footer-link">Keyboard</a></li>
+                        <li><a href="products.html?category=mouse" class="footer-link">Mouse</a></li>
+                        <li><a href="products.html?category=headset" class="footer-link">Headset</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Informasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Tentang Kami</a></li>
+                        <li><a href="#" class="footer-link">Cara Pemesanan</a></li>
+                        <li><a href="#" class="footer-link">Pengiriman</a></li>
+                        <li><a href="#" class="footer-link">Pembayaran</a></li>
+                        <li><a href="#" class="footer-link">Garansi</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Kontak</h5>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jl. Pandanaran No. 123, Semarang</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(024) 1234-5678</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@tokokomputersemarang.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Senin - Sabtu: 09:00 - 20:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-copyright mb-0">
+                        &copy; 2024 Toko Komputer Semarang. Hak Cipta Dilindungi.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-payments">
+                        <i class="fab fa-cc-visa" title="Visa"></i>
+                        <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                        <i class="fab fa-cc-paypal" title="PayPal"></i>
+                        <i class="fab fa-cc-apple-pay" title="Apple Pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" title="Kembali ke Atas">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Lottie Animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Initialize page-specific functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const filterLinks = document.querySelectorAll('.filter-link');
+            filterLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    filterLinks.forEach(l => l.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Get filter type and value
+                    const filterType = this.dataset.filter;
+                    const filterValue = this.dataset.category;
+                    
+                    // Update products based on filter
+                    if (window.productManager) {
+                        window.productManager.filters.category = filterValue;
+                        window.productManager.renderProducts();
+                    }
+                });
+            });
+
+            // Clear filters
+            document.getElementById('clearFilters')?.addEventListener('click', function() {
+                // Reset all filters
+                if (window.productManager) {
+                    window.productManager.filters.category = 'all';
+                    window.productManager.filters.priceRange = [0, 50000000];
+                    window.productManager.filters.search = '';
+                    
+                    // Reset UI
+                    document.querySelectorAll('.filter-link').forEach(link => link.classList.remove('active'));
+                    document.querySelector('.filter-link[data-category="all"]').classList.add('active');
+                    document.getElementById('priceRange').value = 50000000;
+                    document.getElementById('priceRangeValue').textContent = 'Rp 50.000.000';
+                    document.getElementById('searchInput').value = '';
+                    
+                    // Re-render products
+                    window.productManager.renderProducts();
+                }
+            });
+
+            // Price range functionality
+            const priceRange = document.getElementById('priceRange');
+            if (priceRange) {
+                priceRange.addEventListener('input', function() {
+                    const value = parseInt(this.value);
+                    document.getElementById('priceRangeValue').textContent = `Rp ${value.toLocaleString('id-ID')}`;
+                    
+                    if (window.productManager) {
+                        window.productManager.filters.priceRange[1] = value;
+                        window.productManager.renderProducts();
+                    }
+                });
+            }
+
+            // View toggle (grid/list)
+            const gridView = document.getElementById('gridView');
+            const listView = document.getElementById('listView');
+            
+            if (gridView && listView) {
+                gridView.addEventListener('click', function() {
+                    gridView.classList.add('active');
+                    listView.classList.remove('active');
+                    document.querySelector('.product-grid').classList.remove('list-view');
+                });
+                
+                listView.addEventListener('click', function() {
+                    listView.classList.add('active');
+                    gridView.classList.remove('active');
+                    document.querySelector('.product-grid').classList.add('list-view');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
